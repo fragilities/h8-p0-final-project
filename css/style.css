@@ -98,7 +98,7 @@ main #task-list .wrapper li a {
   font-size: 1.25rem;
   position: relative;
 }
-main #task-list .wrapper li a:visited {
+main #task-list .wrapper li a:link, main #task-list .wrapper li a:visited {
   font-style: none;
   color: #333;
 }
