@@ -1,0 +1,139 @@
+@import 'variables';
+
+// utility
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.width-75 {
+  width: 88%;
+}
+
+// margin
+.side-margin-sm {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.side-margin-l {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.right-margin-m {
+  margin-right: 0.5rem;
+}
+
+.right-margin-l {
+  margin-right: 1rem;
+}
+
+// content
+
+header {
+  display: flex;
+  align-items: center;
+  // padding: 0.1rem 0;
+  background: $primary-color;
+  color: $primary-text-color;
+  .logo {
+    flex: 1;
+    text-align: center;
+  }
+
+  #title-desc {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      padding: 0.25rem 0;
+    }
+  }
+}
+
+main {
+  background: $background;
+
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red;
+  padding: 1rem;
+  align-items: center;
+  min-height: 100vh;
+
+  #new-entry {
+    // border: solid 2px darken($background, 50%);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    padding: 0.7rem 0;
+    margin: 3rem 0;
+    font-size: 1.25rem;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+      border: 2px solid #BB890E;
+      opacity: 0.7;
+    }
+  }
+
+  #task-list {
+    margin-top: 3rem 0;
+    color: $primary-text-color;
+    font-size: 1.25rem;
+
+    display: flex;
+    justify-content: space-around;
+    // border: 1px blue solid;
+
+    .wrapper {
+      // border: 1px red solid;
+
+      h3 {
+        border-bottom: 1px solid $primary-text-color;
+        text-align: center;
+        padding: 0.2rem 0;
+
+        i {
+          font-size: 1.25rem;
+        }
+
+        &:hover {
+          color: $muted-red-color;
+          border-bottom-color: $muted-red-color;
+          font-size: 1.5rem;
+        }
+      }
+
+      li {
+        list-style: none;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+
+        display: flex;
+        align-items: center;
+  
+        a {
+          font-size: 1.25rem;
+          position: relative;
+          // top: 1px;
+  
+          &:visited {
+            font-style: none;
+            color: $primary-text-color;
+          }
+  
+          &:hover {
+            color: $muted-red-color;
+          }
+        }
+      }
+    }
+
+  }
+}

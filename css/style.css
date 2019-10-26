@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.width-75 {
+  width: 88%;
+}
+
+.side-margin-sm {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.side-margin-l {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.right-margin-m {
+  margin-right: 0.5rem;
+}
+
+.right-margin-l {
+  margin-right: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #CDA646;
+  color: #333;
+}
+header .logo {
+  flex: 1;
+  text-align: center;
+}
+header #title-desc {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+header #title-desc h3 {
+  padding: 0.25rem 0;
+}
+
+main {
+  background: #FEFDD0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  min-height: 100vh;
+}
+main #new-entry {
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  text-align: center;
+  padding: 0.7rem 0;
+  margin: 3rem 0;
+  font-size: 1.25rem;
+  background: transparent;
+}
+main #new-entry:focus {
+  outline: none;
+  border: 2px solid #BB890E;
+  opacity: 0.7;
+}
+main #task-list {
+  margin-top: 3rem 0;
+  color: #333;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+main #task-list .wrapper h3 {
+  border-bottom: 1px solid #333;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+main #task-list .wrapper h3 i {
+  font-size: 1.25rem;
+}
+main #task-list .wrapper h3:hover {
+  color: #F4AC90;
+  border-bottom-color: #F4AC90;
+  font-size: 1.5rem;
+}
+main #task-list .wrapper li {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+main #task-list .wrapper li a {
+  font-size: 1.25rem;
+  position: relative;
+}
+main #task-list .wrapper li a:visited {
+  font-style: none;
+  color: #333;
+}
+main #task-list .wrapper li a:hover {
+  color: #F4AC90;
+}
+
+/*# sourceMappingURL=style.css.map */
